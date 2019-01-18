@@ -16,7 +16,7 @@ public class ClassifyAdapter extends ArrayAdapter<Item>{
     private int resourceId;
     public ClassifyAdapter(Context context, int textViewResourceId, List<Item> objects){
         super(context,textViewResourceId,objects);
-        resourceId=textViewResourceId;
+        resourceId=textViewResourceId ;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
