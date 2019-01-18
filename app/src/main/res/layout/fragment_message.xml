@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/imageButton_question"
+            android:layout_width="9dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/question1"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton_project"
+            android:layout_width="8dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/project2"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton_pmessage"
+            android:layout_width="5dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/pmessage1"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton_notice"
+            android:layout_width="17dp"
+            android:layout_height="91dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/notice1"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#acb3b3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="12dp" />
+
+
+</LinearLayout>
+
+
+

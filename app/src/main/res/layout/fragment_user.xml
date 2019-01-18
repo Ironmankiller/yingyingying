@@ -1,0 +1,469 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    >
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/beijing"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beijing" />
+        <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ygy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="傻宝"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/head_icon" />
+        <Button
+            android:id="@+id/user_renzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要认证>>"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            app:layout_constraintLeft_toRightOf="@id/user_name"
+            app:layout_constraintTop_toBottomOf="@id/head_icon"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/user_zhuye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="个人主页>>"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/icon_yewu"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/yewu"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                android:layout_marginTop="35dp"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <ImageButton
+                android:id="@+id/icon_wenzhang"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/wenzhang"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_yewu"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="35dp" />
+            <ImageButton
+                android:id="@+id/icon_tiwen"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/tiwen"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_wenzhang"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="35dp" />
+            <ImageButton
+                android:id="@+id/icon_huida"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/huida"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_tiwen"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/user_yewu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="75dp"
+                android:text="  我的业务"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_wenzhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="75dp"
+                android:text="  我的文章"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_yewu"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_tiwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="75dp"
+                android:text="  我的提问"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_wenzhang"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_huida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="75dp"
+                android:text="  我的回答"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_tiwen"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="205dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="300dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/icon_shoucang"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/shoucang"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="125dp"
+                app:layout_constraintTop_toBottomOf="@id/user_name"/>
+            <ImageButton
+                android:id="@+id/icon_guanzhu"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/guanzhu"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_shoucang"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="125dp"  />
+            <ImageButton
+                android:id="@+id/icon_liulan"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/liulan"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_guanzhu"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="125dp"  />
+            <ImageButton
+                android:id="@+id/icon_chengjiu"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/chengjiu"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_liulan"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="125dp"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/user_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="165dp"
+                android:text="  我的收藏"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="165dp"
+                android:text="  我的关注"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_shoucang"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_liulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="165dp"
+                android:text="  我的浏览"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_guanzhu"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_chengjiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="165dp"
+                android:text="  我的成就"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_liulan"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/icon_qianbao"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/qianbao"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="225dp"
+                app:layout_constraintTop_toBottomOf="@id/user_name"/>
+            <ImageButton
+                android:id="@+id/icon_bangzhu"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/bangzhu"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_qianbao"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="225dp"  />
+            <ImageButton
+                android:id="@+id/icon_yejian"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/yejian"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_bangzhu"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="225dp"  />
+            <ImageButton
+                android:id="@+id/icon_shezhi"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/shezhi"
+                android:background="#FFFFFF"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/icon_yejian"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="225dp"  />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/user_qianbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="265dp"
+                android:text="  我的钱包"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_bangzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="265dp"
+                android:text="  帮助"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_qianbao"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_yejian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="265dp"
+                android:text="  夜间模式"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_bangzhu"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+            <TextView
+                android:id="@+id/user_shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="265dp"
+                android:text="  设置"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/user_yejian"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/dise1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="185dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/beijing"/>
+        <ImageView
+            android:id="@+id/dise2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="370dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/beijing"/>
+
+
+        <ImageView
+            android:id="@+id/dise3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="470dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/beijing"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>
+

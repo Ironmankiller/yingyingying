@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#0066CC"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/include"
+            layout="@layout/title_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.qstm.industry.View.StepView
+            android:id="@+id/step_view0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:text="请选择您的擅长方向"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_choosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选择"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/list_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ffffff"
+            android:dividerHeight="10dp"
+
+             />
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#0066cc"
+            android:text="下一步"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+</LinearLayout>

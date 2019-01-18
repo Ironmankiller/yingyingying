@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#FF5000"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_weight="0.90"
+        android:background="@drawable/top_edit_bg"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <com.qstm.industry.View.to_SearchView
+                android:id="@+id/to_searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.qstm.industry.View.to_SearchView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

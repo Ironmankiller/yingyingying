@@ -1,0 +1,14 @@
+<resources>
+    <!--定义APP统一的字体大小间距等start-->
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="header_hight">44.0dip</dimen>
+
+    <!--定义APP统一的字体大小间距等end-->
+
+</resources>
